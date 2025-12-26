@@ -3,4 +3,7 @@ body{
     background-color: aqua;
     padding: 0;
     text-align: auto;
+    left: 0;
+    right: 8px;
+    height: 190;
 }
