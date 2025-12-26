@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			color:white;
+			
+		}
+		body{
+			background:#032532;
+			background-size: cover;
+		}
+		#container{
+			overflow:auto;
+			
+			
+			font-size:16px;
+			font-family:Tahoma;
+			color:#000000;
+		}
+		form{
+			direction: rtl;
+			
+			
+		}
+		#left{
+			width:49%;
+			float:left;
+		}
+		
+		#right{
+			width: 50%;
+			float: right;
+		}
+		.objectlabel{
+			width: 30%;
+			float: right;
+		}
+		.objectinput{
+			width:70%;
+			float: left;
+			
+			
+		}
+		label{
+			display: block;
+			margin-top: 7px;
+			
+		}
+		.lbl{
+			display:inline;
+			margin-top: 7px;
+			
+		}
+		input[type="text"],select{
+			display: block;
+			margin-top: 7px;
+			width:60%;
+			border-radius:5px;
+			padding: 9px;
+			outline: none;
+			border: 1px solid #BE2124;
+			background:#81CCD2;
+			font-size:16px;
+			
+		}
+	input[type="text"]:focus{
+			border: 1px solid #D57979;
+			background:#c89240;
+			
+		}
+		
+		fieldset{
+		
+			border-radius: 15px;
+			border: 3px solid #43858F;
+		}
+		.imgleft{
+			float: left;
+			width: 40%;
+			height:auto;
+		}
+		
+		.button{
+			width: 40%;
+			height:20%;
+			margin: auto;
+			padding: 10px;
+			color: #000000;
+			background: #c89240;
+			border-radius: 10px;
+			font-family:Tahoma;
+			font-size:18px;
+		}
+		.button:hover{
+			width: 40%;
+			height:20%;
+			margin: auto;
+			padding: 10px;
+			color: #000000;
+			background:#E1786A;
+			border: 3px inset #107882;
+			border-radius: 10px;
+			font-family:Tahoma;
+			font-size:18px;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="container">
+		<form action="">
+			<div id="right">
+			<fieldset>
+				<legend>مشخصات فردی</legend>
+					<div class="objectlabel">
+						<label for="fname">نام</label><br/>
+						<label for="lname">نام خانوادگی</label><br/>
+						<label for="fathername">نام پدر</label><br/>
+						<label for="code">کد ملی</label><br/>
+						<label for="borndate">تاریخ تولد</label><br/>
+						<label for="cityborn">صادره</label><br/>
+						<label for="phone">شماره همراه</label><br/>
+					</div>
+				<div class="objectinput">
+					<input type="text" id="fname" name="fname" placeholder="نام خود را وارد کنید" required>
+					<input type="text" id="lname" name="lname" placeholder="نام خانوادگی خود را وارد کنید" required>
+					<input type="text" id="fathername" name="fathername" placeholder="نام پدر خود را وارد کنید">
+					<input type="text" id="code" name="code" placeholder="کد ملی خود را وارد کنید">
+					<input type="text" id="borndate" name="borndate" placeholder="تاریخ تولد خود را وارد کنید">
+					<input type="text" id="cityborn" name="cityborn" placeholder="محل تولد خود را وارد کنید">
+					<input type="text" id="phone" name="phone" placeholder=" شماره همراه خود را وارد کنید">
+				
+				</div>
+			</fieldset>
+				<br/>
+				<fieldset>
+					<legend>آدرس</legend>
+					<div class="objectlabel">
+					<label for="ostan">استان</label><br/>
+					<label for="city">شهر</label><br/>
+					<label for="streeta">خیابان اصلی</label><br/>
+					<label for="streetf">خیابان فرعی</label><br/>
+					<label for="kooche">کوچه</label><br/>
+					<label for="plak">پلاک</label><br/>
+					<label for="vahed">واحد</label><br/>
+					<label for="tabaghe">طبقه</label><br/>
+					</div>
+					<div class="objectinput">
+					<select id="ostan" name="ostan">
+						<option value="khorasan">خراسان رضوی</option>
+						<option value="tehran">تهران</option>
+						<option value="esfehan">اصفهان</option>
+						<option value="fars">فارس</option>
+						<option value="yazd">یزد</option>
+						<option value="kerman">کرمان</option>
+					</select>
+					  <select id="city" name="city">
+						<option value="mashhad">مشهد</option>
+						<option value="tehran">تهران</option>
+						<option value="esfehan">اصفهان</option>
+						<option value="shiraz">شیراز</option>
+						<option value="yazd">یزد</option>
+						<option value="kerman">کرمان</option>
+					</select>
+						<input name="streeta" type="text" id="streeta" >
+						<input type="text" id="streetf" name="streetf">
+						<input type="text" id="kooche" name="kooche">
+						<input type="text" id="plak" name="plak">
+						<input type="text" id="vahed" name="vahed">
+						<input type="text" id="tabaghe" name="tabaghe">
+					</div>
+				</fieldset>
+			</div>
+			
+			<div id="left">
+				<fieldset >
+					<legend>آپلود رزومه</legend>
+					<div class="imgleft"><img src="images (3).png" alt=""></div>
+					<label>لطفا رزومه خود را بارگذاری کنید</label>
+					<br/><br/><br/>
+					<input type="file" class="button">
+					
+				</fieldset>
+			<fieldset>
+				<legend>مشخصات تحصیلی</legend>
+			  <div class="objectlabel">
+				<label for="amt">آخرین مدرک تحصیلی</label><br/>
+				<label for="reshte">رشته</label><br/>
+				<label for="grayesh">گرایش</label><br/>
+				<label for="univercity">دانشگاه</label><br/>
+				<label for="savg">صحیح معدل</label><br/>
+				<label for="aavg">اعشار معدل </label><br/>
+				</div>
+				
+				<div class="objectinput">
+					<input  type="radio" name="radio" id="radio" value="radio">
+					<label  class="lbl" for="radio">فوق دیپلم</label>
+					<input  type="radio" name="radio" id="radio1" value="radio">
+					<label  class="lbl" for="radio1">دیپلم</label>
+					<input  type="radio" name="radio2" id="radio2" value="radio">
+					<label  class="lbl" for="radio2">لیسانس</label>
+					
+				<select id="reshte" name="reshte">
+					<option value="computer">کامپیوتر</option>
+					<option value="hesabdari">حسابداری</option>
+					<option value="photographic">فتوگرافیک</option>
+					<option value="memari">معماری</option>
+					</select>
+					<input  type="text" id="grayesh" name="grayesh">
+				
+					<select id="univercity" name="univercity">
+						<option value="">سجاد</option>
+						<option value="">امام رضا</option>
+						<option value="">خیام</option>
+						<option value="">منتظری</option>
+					</select>
+					
+					<input  type="text" id="savg" name="savg">
+					<input  type="text" id="aavg" name="aavg">
+				</div>
+			</fieldset>
+				<fieldset>
+				<legend>مهارت ها</legend>
+					<div class="objectlabel">
+					<label>لطفا چند مهارت را انتخاب کنید</label>
+						</div>
+					<div class="objectinput">
+					<input type="checkbox" name="icdl" id="icdl">
+					<label class="lbl"  for="icdl">icdl</label>
+					<input type="checkbox" name="photoshop" id="photoshop">
+					<label class="lbl"  for="photoshop">photoshop</label>
+					<br/><br/>
+					<input type="checkbox" name="c#" id="c#">
+					<label class="lbl"  for="c#">c#</label>
+					<input type="checkbox" name="wordpress" id="wordpress">
+					<label class="lbl"  for="wordpress">wordpress</label>
+					<br/><br/>
+					<input type="checkbox" name="java" id="java">
+					<label class="lbl"  for="java">java</label>
+					<input type="checkbox" name="php" id="php">
+					<label class="lbl"  for="php">php</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>ثبت اطلاعات</legend>
+					<input type="submit" value="ثبت اطلاعات" id="submit" name="submit" class="button">
+					<input type="reset" value="پاک کردن اطلاعات" id="reset" name="reset" class="button">
+				</fieldset>
+			</div>
+		</form>
+	</section>
+</body>
+</html>
